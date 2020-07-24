@@ -25,12 +25,14 @@ exports.config = {
     // onPrepare: function() {
     //     var AllureReporter = require('jasmine-allure-reporter');
     //     jasmine.getEnv().addReporter(new AllureReporter({
-    //         resultsDir: './target/reports'
+    //         resultsDir: './target/report'
     //     }));
     // }
     onPrepare: function() {
         jasmine.getEnv().addReporter(new HTMLReporter({
-            baseDirectory: './target/report'
+            baseDirectory: './target/report',
+            jsonsSubfolder: 'json',
+            takeScreenShotsOnlyForFailedSpecs: true
         }).getJasmine2Reporter());
     }
 };
