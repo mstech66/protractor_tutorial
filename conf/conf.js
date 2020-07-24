@@ -1,4 +1,7 @@
 // An example configuration file.
+
+let HTMLReporter = require('protractor-beautiful-reporter');
+
 exports.config = {
     directConnect: true,
 
@@ -17,5 +20,17 @@ exports.config = {
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {
         defaultTimeoutInterval: 30000
+    },
+    //allure report
+    // onPrepare: function() {
+    //     var AllureReporter = require('jasmine-allure-reporter');
+    //     jasmine.getEnv().addReporter(new AllureReporter({
+    //         resultsDir: './target/reports'
+    //     }));
+    // }
+    onPrepare: function() {
+        jasmine.getEnv().addReporter(new HTMLReporter({
+            baseDirectory: './target/report'
+        }).getJasmine2Reporter());
     }
 };
