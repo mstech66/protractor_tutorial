@@ -15,7 +15,7 @@ exports.config = {
 
     // Spec patterns are relative to the current working directory when
     // protractor is called.
-    specs: ['../test/calculator_spec.js'],
+    specs: ['../specs/*.js'],
 
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {
@@ -31,8 +31,7 @@ exports.config = {
     onPrepare: function() {
         jasmine.getEnv().addReporter(new HTMLReporter({
             baseDirectory: './target/report',
-            jsonsSubfolder: 'json',
-            takeScreenShotsOnlyForFailedSpecs: true
+            jsonsSubfolder: 'json'
         }).getJasmine2Reporter());
     }
 };

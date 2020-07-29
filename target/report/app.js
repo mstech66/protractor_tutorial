@@ -275,7 +275,7 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": true,
         "pending": false,
         "os": "Windows",
-        "instanceId": 11588,
+        "instanceId": 11148,
         "browser": {
             "name": "chrome",
             "version": "84.0.4147.89"
@@ -286,19 +286,26 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
             {
                 "level": "SEVERE",
                 "message": "http://juliemr.github.io/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
-                "timestamp": 1595569755868,
+                "timestamp": 1595996628524,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://juliemr.github.io/protractor-demo/ - A cookie associated with a cross-site resource at http://hobfadbig.com/ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.",
+                "timestamp": 1595996629950,
                 "type": ""
             }
         ],
-        "timestamp": 1595569755067,
-        "duration": 3232
+        "screenShotFile": "00e200dd-008f-0002-00dc-009600cb00cb.png",
+        "timestamp": 1595996626840,
+        "duration": 7516
     },
     {
         "description": "should minus two numbers|Basic Calculator Tests",
         "passed": true,
         "pending": false,
         "os": "Windows",
-        "instanceId": 11588,
+        "instanceId": 11148,
         "browser": {
             "name": "chrome",
             "version": "84.0.4147.89"
@@ -306,36 +313,37 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "timestamp": 1595569758602,
-        "duration": 2203
+        "screenShotFile": "005500fd-00b4-0070-005a-0004001e0050.png",
+        "timestamp": 1595996634734,
+        "duration": 2229
     },
     {
         "description": "should multiply two numbers|Basic Calculator Tests",
         "passed": false,
         "pending": false,
         "os": "Windows",
-        "instanceId": 11588,
+        "instanceId": 11148,
         "browser": {
             "name": "chrome",
             "version": "84.0.4147.89"
         },
         "message": [
-            "Expected '400' to equal '40'."
+            "Expected '400' to be '40'."
         ],
         "trace": [
-            "Error: Failed expectation\n    at homepage.verifyResult (C:\\Users\\Manthan\\Documents\\Work\\protractor\\pages\\homepage.js:46:34)\n    at UserContext.<anonymous> (C:\\Users\\Manthan\\Documents\\Work\\protractor\\test\\calculator_spec.js:26:18)\n    at C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:112:25\n    at new ManagedPromise (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1077:7)\n    at ControlFlow.promise (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2505:12)\n    at schedulerExecute (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:95:18)\n    at TaskQueue.execute_ (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2974:25)"
+            "Error: Failed expectation\n    at element.getText.then (C:\\Users\\Manthan\\Documents\\Work\\protractor\\pages\\homepage.js:56:26)\n    at elementArrayFinder_.then (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:804:32)\n    at ManagedPromise.invokeCallback_ (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\Manthan\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
         ],
         "browserLogs": [],
-        "screenShotFile": "0000007a-001e-00fb-0060-009f00f9001a.png",
-        "timestamp": 1595569760815,
-        "duration": 2205
+        "screenShotFile": "002c007e-002d-00a7-008d-004300c10004.png",
+        "timestamp": 1595996637305,
+        "duration": 2353
     },
     {
         "description": "should divide two numbers|Basic Calculator Tests",
         "passed": true,
         "pending": false,
         "os": "Windows",
-        "instanceId": 11588,
+        "instanceId": 11148,
         "browser": {
             "name": "chrome",
             "version": "84.0.4147.89"
@@ -343,15 +351,16 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "timestamp": 1595569763340,
-        "duration": 2180
+        "screenShotFile": "00c100d3-0075-0062-0000-00d6007d0074.png",
+        "timestamp": 1595996639977,
+        "duration": 2193
     },
     {
         "description": "should modulo two numbers|Basic Calculator Tests",
         "passed": true,
         "pending": false,
         "os": "Windows",
-        "instanceId": 11588,
+        "instanceId": 11148,
         "browser": {
             "name": "chrome",
             "version": "84.0.4147.89"
@@ -359,8 +368,9 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "timestamp": 1595569765529,
-        "duration": 2234
+        "screenShotFile": "00000052-00e8-0095-0013-000100ce0060.png",
+        "timestamp": 1595996642507,
+        "duration": 2197
     }
 ];
 
